@@ -1,0 +1,123 @@
+html, body {
+	height: 100%;
+}
+
+.btn {
+	outline-style: none !important;
+}
+
+#mainView {
+	display: flex;
+	position: relative;
+	min-height: 100%;
+	background-image: url("./img/main-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#mainViewContent {
+	padding: 50px 0;
+}
+
+#mainViewRow {
+	position: relative;
+	min-height: 100%;
+	z-index: 2;
+}
+
+.content-overlay-blue {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-image: linear-gradient(to right, rgba(0,128,255,0.3), rgba(17,30,108,0.9));
+}
+
+.content-overlay-black {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#brandLogo {
+	width: 150px;
+	height: auto;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+#about {
+	padding-top: 50px;
+}
+
+#nav-about {
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.nav-tabs .nav-link {
+	color: #dc3545 !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+		color: #495057 !important;
+	}
+
+
+
+#nav-team {
+	position: relative;
+	background-image: url("./img/team.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#nav-team-content {
+	position: relative;
+	z-index: 2;
+	padding: 20px;
+}
+
+.figure-team-img {
+	box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+}
+
+#nav-clients {
+	padding: 100px 0;
+}
+
+@media (max-width: 575.98px) { 
+	.nav-tabs .nav-link {
+		border: 1px solid #dee2e6 !important;
+	}
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+		color: #dc3545 !important;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 991.98px) { 
+	#about, .cardItem {
+		padding-top: 20px;
+	}
+	#nav-about{
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+	.client-item{
+		padding-top: 30px;
+	}
+	#nav-clients {
+		padding: 50px 0;
+	}
+}
