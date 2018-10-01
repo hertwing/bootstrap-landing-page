@@ -1,7 +1,5 @@
 var main = function(){
-	//scrollspy animation
-	$('body').scrollspy({ target: ".scrollBtn", offset: 0 });
-
+	//scroll animation
     $("#learnMore").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -10,9 +8,7 @@ var main = function(){
 
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function() {
-                window.location.hash = hash;
-            });
+            }, 800);
         }
     });
 	//prevent default submit
