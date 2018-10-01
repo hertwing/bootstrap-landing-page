@@ -104,6 +104,12 @@ html, body {
 }
 
 @media (max-width: 575.98px) { 
+	.cardItem:first-child {
+		padding-top: 0px;
+	}
+	#about-navbar {
+		padding-bottom: 20px;
+	}
 	.nav-tabs .nav-link {
 		border: 1px solid #dee2e6 !important;
 	}
@@ -117,6 +123,7 @@ html, body {
 	#about, .cardItem {
 		padding-top: 20px;
 	}
+
 	#nav-about{
 		padding-top: 0;
 		padding-bottom: 20px;
