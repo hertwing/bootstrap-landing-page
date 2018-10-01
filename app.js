@@ -26,6 +26,12 @@ var main = function(){
 
     $('#formWrapper').removeClass("hidden").hide().show("drop", { direction: "right" }, 750);
     //main view animations end
+
+    //prevent default example-link
+    $('.example-link').click(function(e) {
+        e.preventDefault();
+    });
+    //prevent default example-link end
 }	
 
 $(document).ready(main);
